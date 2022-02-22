@@ -3,7 +3,7 @@
 ;; Run this function either using Babashka or an integrated
 ;; REPL such as Calva in VS Code
 (do (require '[clojure.java.io :as io])
-    (for [n (range 1 31)]
+    (for [n (range 1 26)]
       (let [thisnum (format "%02d" n)
             thissample (str "./" thisnum "/sample.txt")
             thisinput (str "./" thisnum "/input.txt")
