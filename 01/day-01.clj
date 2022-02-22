@@ -18,5 +18,4 @@
     part1))
 
 (print (str "Part 1 Answer: " (part1 input)))
-
-(print (str "Part 2 Answer: " (part2 input)))
+(print (str "Part 2 Answer: " (part2 input))) 
