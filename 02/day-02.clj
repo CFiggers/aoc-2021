@@ -3,7 +3,7 @@
 
 (def input 
   (map #(s/split % #" ") 
-       (s/split-lines (slurp "./02/sample.txt"))))
+       (s/split-lines (slurp "./02/input.txt"))))
 
 (defn run1 [[h-pos v-pos] [command value]]
   (let [n (Integer. value)]
@@ -20,7 +20,7 @@
 (defn run2 [[h-pos v-pos aim] [command value]]
   (let [n (Integer. value)]
     (case command
-      "forward" [(+ h-pos n) (+ v-pos (* n aim))]
+      "forward" [(+ h-pos n) (+ v-pos (* n aim)) aim]
       "up" [h-pos v-pos (- aim n)]
       "down" [h-pos v-pos (+ aim n)])))
 
