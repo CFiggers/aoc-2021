@@ -34,10 +34,6 @@
         (map #(if (= 1 %) 0 1))
         (apply str)) 2))
 
-(print (str "Part 1 Answer: " (let [file "input.txt"]
-                                (* (calc-gamma file)
-                                   (calc-epsilon file)))))
-
 (def input
   (str/split-lines (slurp "input.txt")))
 
@@ -66,6 +62,10 @@
        (filter-by output (#(if (= 1 %) 0 1) (get-filter-by output index 1)) index)
        (inc index))
       output)))
+
+(print (str "Part 1 Answer: " (let [file "input.txt"]
+                                (* (calc-gamma file)
+                                   (calc-epsilon file)))))
 
 (print (str "Part 2 Answer: " (*
                                (Long/parseLong (first (get-ox-gen-rating input)) 2)
