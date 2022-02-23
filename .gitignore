@@ -6,3 +6,4 @@
 .nrepl-port
 .calva/
 target/
+.lein-repl-history
