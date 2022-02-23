@@ -18,5 +18,5 @@
     part1))
 
 
-(defn print1 [] (println (str " - Part 1 Answer: " (part1 input))))
-(defn print2 [] (println (str " - Part 2 Answer: " (part2 input)))) 
+(defn ans1 [] (str (part1 input)))
+(defn ans2 [] (str (part2 input))) 
