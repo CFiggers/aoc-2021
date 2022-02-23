@@ -8,11 +8,11 @@ To get started with the following folder structure, run the setup-script.clj fun
 
 ```
 ├── 01
-│   ├── day-01.clj
+│   ├── day_01.clj
 │   ├── input.txt
 │   └── sample.txt
 ├── 02
-│   ├── day-02.clj
+│   ├── day_02.clj
 │   ├── input.txt
 │   └── sample.txt
 |
