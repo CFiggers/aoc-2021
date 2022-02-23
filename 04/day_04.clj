@@ -1,4 +1,4 @@
-(ns aoc-2021.day-04
+(ns day-04
   (:require [clojure.string :as s]
             [clojure.pprint :as p]
             [clojure.walk   :as w]))
@@ -153,6 +153,11 @@
 (defn calc-score []
   )
 
-(p/pprint (reduce up-all boards bingocalls))
+(comment (p/pprint (reduce up-all boards bingocalls))
 
-(p/pprint (up-all "22" boards))
+
+         (p/pprint (up-all "22" boards))
+         )
+
+(defn print1 [] (println "- Part 1 Answer: Not implemented yet"))
+(defn print2 [] (println "- Part 2 Answer: Not implemented yet"))
