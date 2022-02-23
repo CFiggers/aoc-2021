@@ -159,5 +159,5 @@
          (p/pprint (up-all "22" boards))
          )
 
-(defn print1 [] (println "- Part 1 Answer: Not implemented yet"))
-(defn print2 [] (println "- Part 2 Answer: Not implemented yet"))
+(defn ans1 [] "Not implemented yet")
+(defn ans2 [] "Not implemented yet")
