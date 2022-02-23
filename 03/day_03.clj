@@ -1,4 +1,4 @@
-(ns aoc-2021.day-03
+(ns day-03
   (:require [clojure.string :as str]
             [clojure.walk :as w]))
 
@@ -35,7 +35,7 @@
         (apply str)) 2))
 
 (def input
-  (str/split-lines (slurp "input.txt")))
+  (str/split-lines (slurp "./03/input.txt")))
 
 (defn get-filter-by [input index default]
   (as-> input x
@@ -63,10 +63,10 @@
        (inc index))
       output)))
 
-(print (str "Part 1 Answer: " (let [file "input.txt"]
-                                (* (calc-gamma file)
-                                   (calc-epsilon file)))))
+(defn print1 [] (println (str "- Part 1 Answer: " (let [file "./03/input.txt"]
+                                                (* (calc-gamma file)
+                                                   (calc-epsilon file))))))
 
-(print (str "Part 2 Answer: " (*
-                               (Long/parseLong (first (get-ox-gen-rating input)) 2)
-                               (Long/parseLong (first (get-co2-rating input)) 2))))
+(defn print2 [] (println (str "- Part 2 Answer: " (*
+                                               (Long/parseLong (first (get-ox-gen-rating input)) 2)
+                                               (Long/parseLong (first (get-co2-rating input)) 2)))))
