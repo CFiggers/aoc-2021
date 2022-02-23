@@ -63,10 +63,10 @@
        (inc index))
       output)))
 
-(defn print1 [] (println (str "- Part 1 Answer: " (let [file "./03/input.txt"]
-                                                (* (calc-gamma file)
-                                                   (calc-epsilon file))))))
+(defn ans1 [] (str (let [file "./03/input.txt"]
+                      (* (calc-gamma file)
+                         (calc-epsilon file)))))
 
-(defn print2 [] (println (str "- Part 2 Answer: " (*
-                                               (Long/parseLong (first (get-ox-gen-rating input)) 2)
-                                               (Long/parseLong (first (get-co2-rating input)) 2)))))
+(defn ans2 [] (str (*
+                     (Long/parseLong (first (get-ox-gen-rating input)) 2)
+                     (Long/parseLong (first (get-co2-rating input)) 2))))
