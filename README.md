@@ -18,3 +18,20 @@ To get started with the following folder structure, run the setup-script.clj fun
 |
 [etc]
 ```
+
+## -main function
+
+Use `lein run` to see a readout of all days current status. E.g.: 
+
+```
+Day 1:
+ - Part 1 Answer: 1502
+ - Part 2 Answer: 1538
+Day 2:
+ - Part 1 Answer: 2120749
+ - Part 2 Answer: 2138382217
+ Day 3:
+ [etc]
+```
+
+To configure this ongoing, update the `print1` and `print2` functions at the bottom of each day's .clj file.
