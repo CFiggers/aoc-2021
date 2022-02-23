@@ -23,5 +23,5 @@
                      "" "\n"
                      "(defn part2 [] \"Not implemented yet\")" "\n"
                      "" "\n"
-                     "(defn print1 [] (println \"- Part 1 Answer: Not implemented yet\"))" "\n"
-                     "(defn print2 [] (println \"- Part 2 Answer: Not implemented yet\"))"))))))
+                     "(defn ans1 [] \"Not implemented yet\")" "\n"
+                     "(defn ans2 [] \"Not implemented yet\")"))))))
