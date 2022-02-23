@@ -1,4 +1,4 @@
-(ns aoc-2021.day-02
+(ns day-02
   (:require [clojure.string :as s]))
 
 (def input 
@@ -28,5 +28,5 @@
   (let [result (reduce run2 [0 0 0] in)]
     (* (first result) (second result))))
 
-(print (str "Part 1 Answer: " (part1 input)))
-(print (str "Part 2 Answer: " (part2 input)))
+(defn print1 [] (println (str " - Part 1 Answer: " (part1 input))))
+(defn print2 [] (println (str " - Part 2 Answer: " (part2 input))))
