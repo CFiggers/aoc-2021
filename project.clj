@@ -6,4 +6,10 @@
   :dependencies [[org.clojure/clojure "1.10.0"]]
   :main ^:skip-aot aoc-2021.core
   :target-path "target/%s"
+  :source-paths ["src"
+                 "01" "02" "03" "04" "05"
+                 "06" "07" "08" "09" "10"
+                 "11" "12" "13" "14" "15"
+                 "16" "17" "18" "19" "20"
+                 "21" "22" "23" "24" "25"]
   :profiles {:uberjar {:aot :all}})
