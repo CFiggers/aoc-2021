@@ -25,14 +25,16 @@
             [day-24 :as tfour]
             [day-25 :as tfive]))
 
-(defmacro aoc-day [n ns]
-  `(do
-     (println (str "Day " ~n ":"))
-     (@(resolve (symbol ~ns "print1")))
-     (@(resolve (symbol ~ns "print2")))))
+(defn aoc-day [n ns]
+  (let [ans1 (@(resolve (symbol ns "ans1")))
+        ans2 (@(resolve (symbol ns "ans2")))
+        a1len (count ans1)
+        spaces (apply str (repeat (- 25 a1len) " "))]
+    (println (str "Day " n ":  " (when (< n 10) " ") ans1 spaces ans2 ))))
 
 (defn -main []
   (binding [*ns* (find-ns 'aoc-2021.core)]
+    (println "         Part 1" (apply str (repeat 17 " ")) "Part 2")
     (aoc-day 1 "one")
     (aoc-day 2 "two")
     (aoc-day 3 "three")
